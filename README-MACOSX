@@ -9,11 +9,11 @@ recommend using XCode and homebrew.
 
 Install XCode
 
-In the XCode menu, select Preferences.  Select the Downloads tab.  Select 
-Command Line Tools and install.
+Install the XCode command line tools:
+	% xcode-select --install
 
 Install homebrew
-      % sudo ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go)"
+      % sudo /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
       % sudo brew doctor
 
 Install autoconf, automake, and libtool
@@ -49,8 +49,7 @@ If you are building from a source distribution you must first run:
 
 You will most likely need to build and install XercesC:
 
-      % cd third_party
-      % . install_xercesc
+      % brew install xerces-c
 
 If you are using the powerflow module, you will need to build SuperLU:
 
